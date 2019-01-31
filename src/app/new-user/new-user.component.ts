@@ -54,7 +54,7 @@ export class NewUserComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if(result){
-        this.avatarLink = result.link;
+        this.avatarLink = result.src;
       }
     });
   }

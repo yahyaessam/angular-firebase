@@ -63,7 +63,7 @@ export class EditUserComponent implements OnInit {
 
     dialogRef.afterClosed().subscribe(result => {
       if(result){
-        this.item.avatar = result.link;
+        this.item.avatar = result.src;
       }
     });
   }
